@@ -1,0 +1,35 @@
+{
+  "name": "api-contractor",
+  "version": "0.0.1",
+  "description": "Contract testing made easy",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:smolak/api-contractor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smolak/api-contractor/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -c tslint.json -e '{src,test}/**/node_modules/**/' '{src,test}/**/*.{ts}'",
+    "test": "npm run lint && jest test/*",
+    "test:watch": "jest test/* --watch",
+    "precommit": "pretty-quick --staged",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "12.11.1",
+    "@types/jest": "24.0.19",
+    "jest": "24.9.0",
+    "jest-cli": "24.9.0",
+    "prettier": "1.18.2",
+    "pretty-quick": "2.0.0",
+    "ts-jest": "24.1.0",
+    "tslint": "5.20.0",
+    "tslint-config-prettier": "1.18.0",
+    "typescript": "3.6.4"
+  }
+}

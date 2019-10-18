@@ -1,0 +1,8 @@
+.dir-locals.el
+.prettierrc
+.projectile
+jest.config.js
+/test/
+/test-output/
+tsconfig.test.json
+tslint.json
